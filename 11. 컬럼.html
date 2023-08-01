@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>컬럼</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      div > div > div {
+        background: #f7941f;
+        padding: 1rem;
+        border: 1px solid white;
+        font-weight: 600;
+        color: white;
+        border-radius: 7px;
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- EQUAL WIDTH COLUMNS -->
+    <!-- 상단에 위치한 컨테이너 안의 로우(전체열,한 줄)에서 각각의 열로 나눔 -->
+
+    <div class="container">
+      <div class="row">
+        <!-- 33.3%씩 나눔 -->
+        <div class="col">1 of 3</div>
+        <div class="col">2 of 3</div>
+        <div class="col">3 of 3</div>
+      </div>
+      <div class="row">
+        <div class="col">1 of 2</div>
+        <div class="col">2 of 2</div>
+      </div>
+    </div>
+
+    <!-- AUTO WIDTH COLUMNS -->
+    <!-- auto는 컨텐트 내용에 따라 -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col">1 of 3</div>
+        <div class="col-auto">컨텐트 내용에 따라 Variable width content</div>
+        <div class="col">2 of 3</div>
+      </div>
+    </div>
+
+    <!-- SPECIFIC WIDTH COLUMNS -->
+    <!-- 컬럼 비율을 정함 1row=12columns -->
+    <!-- 화면이 작아지면 -->
+
+    <div class="container">
+      <div class="row">
+        <!-- 12등분 8:4의 비율 -->
+        <div class="col-8">Column of 8/12</div>
+        <div class="col-4">Column of 4/12</div>
+      </div>
+    </div>
+    <!-- 화면 사이즈에 따라 비율을 나눔 -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+      </div>
+    </div>
+
+    <!-- ROW COLUMNS -->
+
+    <div class="container">
+      <div class="row row-cols-2">
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+<!-- 컨테이너 안에서 컬럼으로 나눌수있음 -->

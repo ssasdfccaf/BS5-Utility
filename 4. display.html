@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>디스플레이 속성</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      div,
+      span {
+        min-height: 150px;
+        min-width: 150px;
+        margin: 10px;
+      }
+      body {
+        margin-bottom: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- DISPLAY PROPERTIES -->
+
+    <div class="border border-2 border-danger d-inline"></div>
+    <br />
+    <div class="border border-2 border-danger d-inline-block"></div>
+    <br />
+    <span class="border border-2 border-warning d-block"></span>
+
+    <!-- DISPLAY FLEX -->
+    <div class="d-flex">
+      <div class="border border-3 border-danger"></div>
+      <div class="border border-3 border-warning"></div>
+      <div class="border border-3 border-info"></div>
+
+      <div class="border"></div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

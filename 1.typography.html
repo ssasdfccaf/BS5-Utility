@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Bootstrap 5 Basics</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      b,
+      i,
+      a {
+        padding: 5px;
+      }
+
+      b {
+        display: block;
+      }
+
+      body {
+        margin-bottom: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="btn btn-primary">버튼</button>
+
+    <!-- 제목 -->
+    <h1>h1. Bootstrap heading</h1>
+    <h2>h2. Bootstrap heading</h2>
+    <h3>h3. Bootstrap heading</h3>
+    <h4>h4. Bootstrap heading</h4>
+    <h5>h5. Bootstrap heading</h5>
+    <h6>h6. Bootstrap heading</h6>
+
+    <!-- 큰 제목 -->
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+    <h1 class="display-5">Display 5</h1>
+    <h1 class="display-6">Display 6</h1>
+
+    <!-- 서두 : 기본 폰트보다 약간 커보임-->
+    <p class="lead">
+      This is a lead paragraph. It stands out from regular paragraphs.
+    </p>
+    <!-- 인라인 텍스트 -->
+    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+    <p>
+      <s>This line of text is meant to be treated as no longer accurate.</s>
+    </p>
+    <p>
+      <ins
+        >This line of text is meant to be treated as an addition to the
+        document.</ins
+      >
+    </p>
+    <p><u>This line of text will render as underlined.</u></p>
+    <p>
+      <small>This line of text is meant to be treated as fine print.</small>
+    </p>
+    <p><strong>This line rendered as bold text.</strong></p>
+    <p><em>This line rendered as italicized text.</em></p>
+    <!-- 출처 표기 -->
+    <figure class="text-end">
+      <blockquote class="blockquote">
+        <p>사막이 아름다운 것은 어딘가에 샘이 숨겨져 있기 때문이다</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        생떽쥐베리 famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
